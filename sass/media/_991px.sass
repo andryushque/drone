@@ -42,3 +42,47 @@
 
   .services
     padding: 0 0 10rem
+
+  .video-work
+    .video
+      padding: 16rem 0
+      &__link
+        width: 6rem
+        height: 6rem
+        &-icon
+          font-size: 1.8rem
+        &::before
+          border: 6rem solid rgba(255,255,255,0.3)
+        &:hover
+          &::before
+            border: 6rem solid rgba(255,255,255,0.4)
+
+    .work
+      &-wrapper
+        flex-wrap: wrap
+        padding: 10rem 0 10rem 6rem
+      &__content
+        width: 100%
+        padding-right: 0
+        margin-bottom: 6rem
+      &__title
+        margin-bottom: 2.4rem
+        font-size: 4rem
+      &__text
+        margin-bottom: 2rem
+
+      &__items
+        width: 100%
+      &-item
+        padding-bottom: 4rem
+        &__image
+          width: 6rem
+          min-width: 6rem
+          height: 6rem
+          margin-right: 2.4rem
+          &::after
+            left: 2.4rem
+            height: 250%
+        &__title
+          margin-bottom: 2rem
+          font-size: 2.2rem

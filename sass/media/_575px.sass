@@ -52,3 +52,38 @@
           left: 0.3rem
         &-next
           right: 0.3rem
+
+  .video-work
+    .video
+      padding: 8rem 0
+      &__link
+        width: 4rem
+        height: 4rem
+        &-icon
+          font-size: 1.4rem
+        &::before
+          border: 4rem solid rgba(255,255,255,0.3)
+        &:hover
+          &::before
+            border: 4rem solid rgba(255,255,255,0.4)
+
+    .work
+      &-wrapper
+        flex-wrap: wrap
+        padding: 6rem 0 6rem 2rem
+      &__content
+        margin-bottom: 3rem
+      &__title
+        font-size: 3.2rem
+      &__text
+        font-size: 1.6rem
+
+      &-item
+        padding-bottom: 2rem
+        flex-direction: column
+        &__image
+          width: 4rem
+          min-width: 4rem
+          height: 4rem
+          margin-right: 0
+          margin-bottom: 1rem
