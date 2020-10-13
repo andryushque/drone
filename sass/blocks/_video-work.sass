@@ -1,0 +1,108 @@
+.video-work
+  background: url(../img/video-work/video-bg.png) center center no-repeat
+  background-size: cover
+  overflow-x: hidden
+
+  .video
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 24rem 0
+    &__link
+      position: relative
+      z-index: 2
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 7.5rem
+      height: 7.5rem
+      border-radius: 50%
+      background-color: $color-light
+      &-icon
+        font-size: 2rem
+        color: $color-accent
+      &::before
+        content: ""
+        position: absolute
+        z-index: -1
+        border: 75px solid rgba(255,255,255,0.3)
+        transition: border 0.4s ease
+        border-radius: 50%
+      &:hover
+        &::before
+          border: 75px solid rgba(255,255,255,0.4)
+
+  .work
+    position: relative
+    background-color: $color-light
+    &::before
+      content: ""
+      position: absolute
+      width: 200%
+      right: -200%
+      height: 100%
+      z-index: 1
+      background-color: $color-light
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      padding: 10rem 0 10rem 10rem
+    &__content
+      width: 60%
+      padding-right: 10rem
+    &__title
+      margin-bottom: 3rem
+      @include title($font-size: 4.8rem, $color: $color-dark, $text-transform: capitalize)
+    &__text
+      margin-bottom: 2.4rem
+      @include text($font-size: 2rem, $font-weight: 400, $color: $color-dark)
+      &--bold
+        font-weight: 500
+    &__button
+      display: inline-block
+      padding: 1.8rem 3.1rem
+      background-color: $color-dark
+      transition: color 0.5s ease, background-color 0.5s ease
+      @include text($font-size: 1.6rem, $line-height: 1, $text-transform: uppercase)
+      &:hover
+        background-color: $color-accent
+        color: $color-light
+
+    &__items
+      width: 40%
+    &-item
+      display: flex
+      padding-bottom: 5rem
+      &:last-child
+        padding-bottom: 0
+        .work-item__image
+          &::after
+            display: none
+      &__image
+        position: relative
+        width: 6.4rem
+        min-width: 6.4rem
+        height: 6.4rem
+        margin-right: 3rem
+        img
+          position: relative
+          z-index: 10
+          width: 100%
+          height: 100%
+        &::after
+          content: ""
+          position: absolute
+          top: 0
+          left: 2.6rem
+          z-index: 0
+          width: 1rem
+          height: 300%
+          background-image: radial-gradient($color-accent 20%, transparent 18%)
+          background-position: right
+          background-size: 5px 10px
+          background-repeat: repeat-y
+      &__title
+        margin-bottom: 2.4rem
+        @include title($font-size: 2.4rem, $color: $color-dark, $text-transform: capitalize)
+      &__text
+        @include text($font-size: 1.6rem, $color: $color-grey)
