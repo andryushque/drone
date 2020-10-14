@@ -64,4 +64,15 @@ $(document).ready(function () {
       },
     },
   });
+
+  // 02-3. Slider in testimonials section
+  const testimonialsSlider = new Swiper(".testimonials-slider", {
+    speed: 800,
+    loop: true,
+    navigation: {
+      nextEl: '.testimonials-slide__btn-next',
+      prevEl: '.testimonials-slide__btn-prev',
+    },
+    slidesPerView: 1,
+  });
 });
