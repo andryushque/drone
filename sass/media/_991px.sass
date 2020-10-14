@@ -44,7 +44,11 @@
     padding: 0 0 10rem
 
   .video-work
+    background: none
+    background-color: $color-light
     .video
+      background: url(../img/video-work/video-bg.png) center center no-repeat
+      background-size: cover
       padding: 16rem 0
       &__link
         width: 6rem
@@ -60,7 +64,7 @@
     .work
       &-wrapper
         flex-wrap: wrap
-        padding: 10rem 0 10rem 6rem
+        padding: 6rem 0 10rem
       &__content
         width: 100%
         padding-right: 0
@@ -86,6 +90,8 @@
         &__title
           margin-bottom: 2rem
           font-size: 2.2rem
+      &::before
+        display: none
 
   .projects
     padding: 0 0 10rem
@@ -105,11 +111,11 @@
       margin-top: 0
 
   .testimonials
-    padding: 10rem 0
+    padding: 10rem 0 6rem
     &-slider
       width: 100%
     &-slide
-      padding: 8rem 1rem 5rem 8rem
+      padding: 8rem 1rem 4rem 8rem
       &__text
         margin: 0 auto 4rem
         font-size: 2rem
