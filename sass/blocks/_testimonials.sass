@@ -9,15 +9,20 @@
     margin: 0 auto
   &-slide
     position: relative
-    padding: 10rem 1rem 0 10rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 10rem 1rem 5rem 10rem
     &__text
       margin-bottom: 4.8rem
       @include text($font-size: 2.2rem)
     &__author
       display: flex
       align-items: center
+      margin-top: auto
     &__image
       width: 9rem
+      min-width: 9rem
       height: 9rem
       margin-right: 1.6rem
       img
@@ -39,13 +44,12 @@
       top: 2rem
       left: 2rem
       z-index: -1
-      max-width: 12rem
 
   .swiper
     &-button
       &-prev, &-next
         top: auto
-        bottom: 1rem
+        bottom: 0
         left: auto
         z-index: 100
         display: flex

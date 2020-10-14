@@ -69,6 +69,7 @@ $(document).ready(function () {
   const testimonialsSlider = new Swiper(".testimonials-slider", {
     speed: 800,
     loop: true,
+    autoHeight: true,
     navigation: {
       nextEl: '.testimonials-slide__btn-next',
       prevEl: '.testimonials-slide__btn-prev',
