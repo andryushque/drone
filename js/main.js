@@ -38,13 +38,13 @@ $(document).ready(function () {
     },
   });
 
-  // 02-2. Slider in testimonials section
-  const testimonialsSlider = new Swiper(".testimonials-slider", {
+  // 02-2. Slider in projects section
+  const projectsSlider = new Swiper(".projects-slider", {
     speed: 400,
     loop: true,
     navigation: {
-      nextEl: '.testimonials-slide__btn-next',
-      prevEl: '.testimonials-slide__btn-prev',
+      nextEl: '.projects-slide__btn-next',
+      prevEl: '.projects-slide__btn-prev',
     },
     breakpoints: {
       320: {
