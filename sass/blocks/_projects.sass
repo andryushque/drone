@@ -2,9 +2,10 @@
   background-color: $color-light
   &-wrapper
     display: flex
-    justify-content: space-between
+    justify-content: center
   &__image
     width: 50%
+    max-width: 90rem
     height: 50rem
     background-color: $color-dark
     img
@@ -18,13 +19,13 @@
     justify-content: center
     align-content: center
     width: 50%
+    max-width: 90rem
     padding: 6rem 12rem 6rem 3rem
   &__title
     margin-bottom: 3rem
     @include title($font-size: 4rem, $color: $color-dark, $text-transform: capitalize)
   &__text
-    margin-bottom: 2rem
     @include text($font-size: 2rem, $font-weight: 400, $color: $color-dark)
     &--bold
-      margin-bottom: 0
+      margin-bottom: 2rem
       font-weight: 500
