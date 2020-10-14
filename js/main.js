@@ -11,7 +11,7 @@ $(document).ready(function () {
     };
 
   /*=== 02. Swiper Slider ===*/
-  // Slider in services section
+  // 02-1. Slider in services section
   const servicesSlider = new Swiper(".services-slider", {
     speed: 400,
     loop: true,
@@ -38,7 +38,7 @@ $(document).ready(function () {
     },
   });
 
-  // Slider in testimonials section
+  // 02-2. Slider in testimonials section
   const testimonialsSlider = new Swiper(".testimonials-slider", {
     speed: 400,
     loop: true,
