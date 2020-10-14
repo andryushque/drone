@@ -16,8 +16,8 @@ $(document).ready(function () {
     speed: 400,
     loop: true,
     navigation: {
-      nextEl: '.services-slide__btn-next',
-      prevEl: '.services-slide__btn-prev',
+      nextEl: '.services__button-next',
+      prevEl: '.services__button-prev',
     },
     breakpoints: {
       320: {
@@ -43,8 +43,8 @@ $(document).ready(function () {
     speed: 400,
     loop: true,
     navigation: {
-      nextEl: '.projects-slide__btn-next',
-      prevEl: '.projects-slide__btn-prev',
+      nextEl: '.projects__button-next',
+      prevEl: '.projects__button-prev',
     },
     breakpoints: {
       320: {
@@ -69,10 +69,9 @@ $(document).ready(function () {
   const testimonialsSlider = new Swiper(".testimonials-slider", {
     speed: 800,
     loop: true,
-    autoHeight: true,
     navigation: {
-      nextEl: '.testimonials-slide__btn-next',
-      prevEl: '.testimonials-slide__btn-prev',
+      nextEl: '.testimonials__button-next',
+      prevEl: '.testimonials__button-prev',
     },
     slidesPerView: 1,
   });
