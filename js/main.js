@@ -95,4 +95,14 @@ $(document).ready(function () {
   if(select.length){
     select.niceSelect();
   }
+
+  /*=== 05. Sticky Header ===*/
+  $(window).on('scroll', function () {
+  var scroll = $(window).scrollTop();
+  if (scroll < 400) {
+    $(".header").removeClass("header--sticky");
+  } else {
+    $(".header").addClass("header--sticky");
+  }
+  });
 });
