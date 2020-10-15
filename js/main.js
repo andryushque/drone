@@ -75,4 +75,18 @@ $(document).ready(function () {
     },
     slidesPerView: 1,
   });
+
+  /*=== 03. To Top Button ===*/
+  var topButton = $(".top-button");
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 500) {
+      topButton.addClass("show");
+    } else {
+      topButton.removeClass("show");
+    }
+  });
+  topButton.on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "750");
+  });
 });
