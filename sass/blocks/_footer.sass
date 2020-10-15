@@ -1,0 +1,111 @@
+.footer
+  background: url(../img/footer/footer-bg.png) center center no-repeat
+  background-size: cover
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    padding: 12rem 0 9rem
+  &__item
+    width: 15%
+    &:nth-child(1)
+      width: 40%
+      padding-right: 10rem
+    &:last-child
+      display: flex
+  &__text
+    margin-bottom: 5rem
+    @include text($color: #dbdbdb)
+  &__contact-link
+    display: block
+    @include title($font-size: 1.4rem, $color: $color-accent, $text-transform: none)
+    &:first-child
+      margin-bottom: 1rem
+      font-size: 2.6rem
+    &:hover
+      text-decoration: underline
+
+  &__title
+    margin-bottom: 4rem
+    @include title($font-size: 2rem, $color: $color-accent)
+  &__list-link
+    display: inline-block
+    margin-bottom: 1.5rem
+    transition: color 0.4s ease
+    @include text($color: #dbdbdb)
+    &:hover
+      color: $color-accent
+  &__social-link
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 1rem
+    width: 4rem
+    height: 4rem
+    border-radius: 50%
+    background-color: rgba($color-accent, 0.2)
+    transition: color 0.4s ease, background-color 0.4s ease
+    @include text($color: $color-accent)
+    i
+      transition: transform 0.4s ease
+    &:hover
+      background-color: $color-accent
+      color: $color-light
+      i
+        transform: scaleX(-1)
+
+  &__logo
+    margin-bottom: 3rem
+  .logo
+    position: relative
+    z-index: 100
+    display: flex
+    width: 14rem
+    height: 6rem
+    &__text
+      display: block
+      width: 7rem
+      text-align: center
+      font: normal 600 2.6rem/6rem "Montserrat"
+      text-transform: uppercase
+      transition: background-color 0.5s ease, color 0.5s ease
+      &:first-child
+        background-color: $color-accent
+        color: $color-light
+      &:last-child
+        background-color: $color-light
+        color: $color-dark
+    &:hover
+      .logo
+        &__text
+          &:first-child
+            background-color: $color-light
+            color: $color-dark
+          &:last-child
+            background-color: $color-accent
+            color: $color-light
+
+  &-copyright
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 3rem 0 6rem
+    border-top: 1px solid rgba($color-light, 0.1)
+    &__text
+      display: inline-block
+      @include text($font-size: 1.4rem)
+      &:first-child
+        position: relative
+        margin-right: 3rem
+        &::after
+          content: "|"
+          position: absolute
+          top: 0
+          right: -1.8rem
+    &__icon
+      font-size: 1.6rem
+      color: $color-accent
+    &__link
+      color: $color-accent
+      transition: color 0.5s ease
+      &:hover
+        color: $color-light
