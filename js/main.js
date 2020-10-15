@@ -1,14 +1,14 @@
 $(document).ready(function () {
   /*=== 01. Slick Nav ===*/
   // Header mobile menu
-    const mmenu = $('ul#header-navigation');
-    if(mmenu.length){
-      mmenu.slicknav({
-        prependTo: ".mmenu",
-        closedSymbol: '+',
-        openedSymbol: '-'
-      });
-    };
+  const mmenu = $('ul#header-navigation');
+  if(mmenu.length){
+    mmenu.slicknav({
+      prependTo: ".mmenu",
+      closedSymbol: '+',
+      openedSymbol: '-'
+    });
+  };
 
   /*=== 02. Swiper Slider ===*/
   // 02-1. Slider in services section
@@ -77,7 +77,7 @@ $(document).ready(function () {
   });
 
   /*=== 03. To Top Button ===*/
-  var topButton = $(".top-button");
+  const topButton = $(".top-button");
   $(window).scroll(function () {
     if ($(window).scrollTop() > 500) {
       topButton.addClass("show");
@@ -89,4 +89,10 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, "750");
   });
+
+  /*=== 04. Nice Select plugin ===*/
+  const select = $('.form__select');
+  if(select.length){
+    select.niceSelect();
+  }
 });
