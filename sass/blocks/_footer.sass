@@ -27,9 +27,11 @@
   &__title
     margin-bottom: 4rem
     @include title($font-size: 2rem, $color: $color-accent)
-  &__list-link
-    display: inline-block
+  &__list-item
     margin-bottom: 1.5rem
+    &:last-child
+      margin-bottom: 0
+  &__list-link
     transition: color 0.4s ease
     @include text($color: #dbdbdb)
     &:hover

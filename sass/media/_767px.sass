@@ -131,3 +131,38 @@
     &__text
       margin-bottom: 2.4rem
       font-size: 1.8rem
+
+  .footer
+    &-wrapper
+      padding: 8rem 0 6rem
+      flex-wrap: wrap
+    &__item
+      width: 40%
+      margin-bottom: 3rem
+      &:nth-child(1)
+        width: 100%
+        padding-right: 0
+        order: 3
+      &:last-child
+        width: 40%
+        flex-direction: row
+        align-items: start
+        order: 4
+        margin-bottom: 0
+    &__logo
+      margin-bottom: 1.5rem
+    &__text
+      margin-bottom: 1.5rem
+    &__social-link
+      margin-right: 1rem
+      margin-bottom: 0
+
+    &-copyright
+      flex-direction: column
+      &__text
+        text-align: center
+        &:first-child
+          margin-bottom: 1rem
+          margin-right: 0
+          &::after
+            display: none
